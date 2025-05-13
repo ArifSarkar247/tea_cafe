@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Report - {{ report.date }}</title>
+    <style>
+        body { font-family: sans-serif; }
+        .report-box { padding: 20px; }
+        h1 { text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        td, th { padding: 10px; border: 1px solid #000; }
+    </style>
+</head>
+<body>
+    <div class="report-box">
+        <h1>Tea Stall Daily Report</h1>
+        <p>Date: {{ report.date }}</p>
+        <table>
+            <tr><th>Total Cups</th><td>{{ report.total_cups }}</td></tr>
+            <tr><th>Total Income</th><td>{{ report.total_income }} Tk</td></tr>
+            <tr><th>Total Expense</th><td>{{ report.total_expense }} Tk</td></tr>
+            <tr><th>Profit</th><td>{{ report.profit }} Tk</td></tr>
+        </table>
+    </div>
+</body>
+</html>
